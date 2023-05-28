@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+File=/etc/hosts
+New_file=/etc/hosts.new
+cp "$File" "$New_file"
+if test -f "$File";then
+    echo "127.0.0.2    localhost" >> "$File"
+    echo "8.8.8.8    facebook.com" >> "$File"
+fi
