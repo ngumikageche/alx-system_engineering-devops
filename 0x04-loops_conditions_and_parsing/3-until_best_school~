@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#using until loop
+
+max=10
+num=1
+until [ $num == $max ];
+do
+	echo "Best School"
+	num=$((num + 1))
+done
