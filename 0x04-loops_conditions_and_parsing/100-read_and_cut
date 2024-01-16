@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env
 # Check if the file /etc/passwd exists
 if [ -e /etc/passwd ]; then
   # Read the file line by line using a while loop
