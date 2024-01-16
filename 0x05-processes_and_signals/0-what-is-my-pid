@@ -1,2 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#searches for the process ID(s) of the Bash shell
 pidof bash
