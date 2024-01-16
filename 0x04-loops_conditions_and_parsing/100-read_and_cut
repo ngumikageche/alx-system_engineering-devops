@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
+
 # Check if the file /etc/passwd exists
 if [ -e /etc/passwd ]; then
   # Read the file line by line using a while loop
-  while IFS=: read -r username x uid gid info home shell; do
+  while IFS=: read -r username _ uid _ _ home _; do
     # Display username, user id, and home directory
     echo "Username: $username"
     echo "User ID: $uid"
