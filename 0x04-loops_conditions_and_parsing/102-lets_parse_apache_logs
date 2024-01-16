@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 # Check if the Apache log file exists
 if [ -e apache-access.log ]; then
   # Use awk to extract IP and HTTP status code

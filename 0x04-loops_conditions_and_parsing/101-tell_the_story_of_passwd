@@ -4,7 +4,7 @@ if [ -e /etc/passwd ]; then
   # Read the file line by line using a while loop and IFS
   while IFS=: read -r username _ uid gid info home shell; do
     # Extract additional information
-    IFS=, read -r _ _ passcode <<< "$info"
+    IFS=, read -r _ _ description passcode <<< "$info"
 
     # Display the formatted information
     echo "The user $username is part of the $gid gang, lives in $home and rides $shell."
