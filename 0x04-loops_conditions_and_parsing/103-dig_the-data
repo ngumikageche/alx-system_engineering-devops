@@ -1,4 +1,5 @@
-#!/usr/bin/env bash# Check if the Apache log file exists
+#!/usr/bin/env bash\
+# Check if the Apache log file exists
 if [ -e apache-access.log ]; then
   # Use awk to process the log file and display grouped data
   awk '{ count[$1" "$9]++ } END { for (key in count) print count[key], key }' apache-access.log | sort -rn
